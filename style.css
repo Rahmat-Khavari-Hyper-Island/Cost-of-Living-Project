@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: solid;
+}
+
+#home-section {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#map-section {
+  background-color: rgb(165, 231, 255);
+  padding: 20px;
+}
+
+#countries-list-section {
+  background-color: #f4f4f4;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#col-table-section {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: left;
+  border-top: 2px solid #cbcbcb;
+}
+
+.countries-list-table {
+  width: 100%;
+  border: 0;
+}
+
+.countries-list-table td {
+  vertical-align: top;
+}
+
+#svg_country_name,
+#countryCaption {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#col-table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.sticky-div {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(120, 120, 120, 0.69);
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sticky-div.active {
+  opacity: 1;
+}
+
+footer {
+  border-top: 2px solid #000;
+  text-align: center;
+}
